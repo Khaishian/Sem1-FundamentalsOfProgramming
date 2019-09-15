@@ -14,7 +14,7 @@ Print the multiplication of the two numbers
 2.Determine whether a random number is greater than 50.
 ```
 Generate a random number
-if the mark is more than 50
+if the number is greater than 50
   Print "Greater than 50"
 otherwise
   Print "Less than or equal to 50"
