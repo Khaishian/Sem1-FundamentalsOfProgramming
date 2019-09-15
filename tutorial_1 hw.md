@@ -72,5 +72,61 @@ Print oddNumber and evenNumber
 ## Part II
 8.Count the number of alphabet U and M from a sentence entered by user.
 ```
+Get a sentence from the user
+Initialise alphabetU as 0 and alphabetM as 0
+Intialise an index that point to the first character of the sentence
+while the index is less than the length of the sentence
+  Read the character according to the index 
+  if the character is U
+    increase alphabetU by 1
+  else if the character is M
+    increase alphabetM by 1
+  increase the index by 1
+Print alphabetU and alphabetM
+```
+9.Display the frequency of a keyword from a web page.
+```
+Initialise frequency as 0
+Get a keyword from the user
+Read from a webpage
+while the web page is not end of the file
+  Read one line from the page 
+  for each word in the line
+    if the word is equal to the keyword
+      increase frequency by 1
+Print the frequency
+```
+10.Display the number of female student from a random list of 100 students.
+```
+Initialise counter as 1 
+while the counter <= 100
+  Generate a random student with gender
+  Store the student in the list
+  increase the counter by 1
+Initialise femaleStudent as 0
+for each student in the list
+  if the gender is female
+    increase femaleStudent by 1
+Print femaleStudent
+```
+11.Display a list of 5 random numbers in descending order
+```
+Initialise counter as 1
+while the counter <= 5
+  Generate a random number
+  Store the number in the list
+  Increase the counter by 1
+Initialise an iteration as 1 
+while the iteration is less than the total number in the list
+  for each number in the list
+    if the current number is greater than the next number
+      Assign the current number to the temporary number
+      Assign the next number to the current number
+      Assign the temporary number to the next number
+  Increase the iteration by 1
+for each number in the list
+  Print the number
+```
+12.
 
 
