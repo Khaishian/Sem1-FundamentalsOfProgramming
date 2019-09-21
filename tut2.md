@@ -2,8 +2,8 @@
 # Tutorial 2 Java Fundamental
 
 >##### 1.Display the sentence Faculty of Computer Science and Information Technology.
->   a. In one line using multiple Java statements
->```java
+>a. In one line using multiple Java statements
+>```
 System.out.print("Faculty ");
 System.out.print("of ");
 System.out.print("Computer ");
@@ -12,8 +12,8 @@ System.out.print("and ");
 System.out.print("Information ");
 System.out.print("Technology");
 >```
->   b. In multiple lines using one Java statement
->```java
+>b. In multiple lines using one Java statement
+>```
 System.out.print("Faculty\nof\nComputer\nScience\nand\nInformation\nTechnology");
 >```
 
