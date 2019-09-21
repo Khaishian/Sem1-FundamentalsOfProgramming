@@ -3,41 +3,41 @@
 
 >##### 1.Display the sentence Faculty of Computer Science and Information Technology.
 >a. In one line using multiple Java statements
->```
-System.out.print("Faculty ");
-System.out.print("of ");
-System.out.print("Computer ");
-System.out.print("Science ");
-System.out.print("and ");
-System.out.print("Information ");
-System.out.print("Technology");
+>```java
+>System.out.print("Faculty ");
+>System.out.print("of ");
+>System.out.print("Computer ");
+>System.out.print("Science ");
+>System.out.print("and ");
+>System.out.print("Information ");
+>System.out.print("Technology");
 >```
 >b. In multiple lines using one Java statement
->```
-System.out.print("Faculty\nof\nComputer\nScience\nand\nInformation\nTechnology");
+>```java
+>System.out.print("Faculty\nof\nComputer\nScience\nand\nInformation\nTechnology");
 >```
 
 >##### 2.Write a Java statement that print "SDN" - Software-defined networking
->```
-System.out.print("\"SDN\" - Software-defined networking");
+>```java
+>System.out.print("\"SDN\" - Software-defined networking");
 >```
 
 >##### 3. Correct the error for the following statements.
 >a. System.Println("Java Programming");
->```
-System.out.println("Java Programming");
+>```java
+>System.out.println("Java Programming");
 >```
 >b. System.in.println("Introduction to Java!")
->```
-System.out.println("Introduction to Java!");
+>```java
+>System.out.println("Introduction to Java!");
 >```
 >c. System.out.println("\t is the horizontal tab character");
->```
-System.out.println("\\t is the horizontal tab character");
+>```java
+>System.out.println("\\t is the horizontal tab character");
 >```
 >d. system.out.println("Java is case sensitive!" );
->```
-System.out.println("Java is case sensitive!" );
+>```java
+>System.out.println("Java is case sensitive!" );
 >```
 
 >##### 4. Write statements for each of the following
