@@ -101,9 +101,9 @@ value.
 >##### 5. Write the statements that display the string array name sentence in reverse order. Each string element must be displayed in reverse order as well.
 >```java
 >for(int i =sentence.length-1; i>= 0 ;i--){
-     for(int j = sentence[i].length()-1; j>=0; j--)          
-         System.out.print(sentence[i].charAt(j));
-     System.out.print(" ");   
+>    for(int j = sentence[i].length()-1; j>=0; j--)          
+>        System.out.print(sentence[i].charAt(j));
+>    System.out.print(" ");   
 >}
 >```
 
