@@ -176,7 +176,7 @@
 >public class Coordinates {
 >    
 >        public int x;
->       public int y;
+>        public int y;
 >        
 >        public Coordinates(int a, int b) {
 >             this.x = a;
@@ -207,47 +207,45 @@
 >
 >```java
 >public class Payment {
->public double amount;
->public String chequeNum;
->public String cardHolderName;
->public String cardType;
->public String expirationDate;
->public String validCode;
+>     public double amount;
+>     public String chequeNum;
+>     public String cardHolderName;
+>     public String cardType;
+>     public String expirationDate;
+>     public String validCode;
 >
->public  Payment (double a) {
->   this.amount = a;
->}
->public  Payment (double a, String c) {
->   this.amount = a;
->   this.chequeNum = c;
->
->}
->public  Payment (double a, String chn, String ct, String expd, String vc) {
->   this.amount = a;
->   this.cardHolderName = chn;
->   this.cardType = ct;
->   this.expirationDate = expd;
->   this.validCode = vc;
->}
->
+>     public  Payment (double a) {
+>           this.amount = a;
+>     }
+>     public  Payment (double a, String c) {
+>           this.amount = a;
+>           this.chequeNum = c;
+>     }
+>     public  Payment (double a, String chn, String ct, String expd, String vc) {
+>        this.amount = a;
+>           this.cardHolderName = chn;
+>           this.cardType = ct;
+>           this.expirationDate = expd;
+>           this.validCode = vc;
+>        }
 >}
 >```
 >
->
+
 >##### 5. Create a class Connection. The Connection class keeps track of the number of connections to the server. Whenever an object is created, a connection is established. The class has a disconnect method and a display method that display the number of connections to the server.
 >```java
 >public class Connection { 
->    static int counter = 0;
+>         static int counter = 0;
 >
->    public Connection() {
->        counter++;
->    }
->    public void disconnect(){
->        counter--;
->    }
->    public static void display(){
->        System.out.println("Number of connections to the server: " + counter);
->    }
+>         public Connection() {
+>             counter++;
+>         }
+>         public void disconnect(){
+>             counter--;
+>         }
+>         public static void display(){
+>             System.out.println("Number of connections to the server: " + counter);
+>         }
 >}
 >
 >```
