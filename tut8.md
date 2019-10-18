@@ -222,7 +222,7 @@
 >           this.chequeNum = c;
 >     }
 >     public  Payment (double a, String chn, String ct, String expd, String vc) {
->        this.amount = a;
+>           this.amount = a;
 >           this.cardHolderName = chn;
 >           this.cardType = ct;
 >           this.expirationDate = expd;
