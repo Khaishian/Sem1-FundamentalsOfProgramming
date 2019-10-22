@@ -1,0 +1,25 @@
+package Week01;
+
+import java.util.Random;
+
+public class Game {
+    public String name;
+    public int sum;
+    public int dice;
+
+    public Game(String a) {
+        this.name = a;
+        this.sum = 0;
+
+    }
+    public void roll(){
+        Random ran = new Random();
+        this.dice = ran.nextInt(6)+1;
+        System.out.println(this.name + " rolled " + this.dice);
+        this.sum += this.dice;
+        System.out.println("Total score: " + this.sum);
+        if (this.sum >= 100){
+            System.out.println(this.name + " wins!"); 
+        }
+    }
+}

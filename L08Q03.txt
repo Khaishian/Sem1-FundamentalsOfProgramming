@@ -1,0 +1,30 @@
+package Week01;
+
+import java.util.Scanner;
+
+public class WeightCalculator {
+    public int age;
+    public double height;
+    public WeightCalculator(){
+    }
+    public double recommendWeight(){
+        double res = (this.height - 100 + this.age/10)*0.9;
+        return res;
+    }
+    public void setAgeHeight(){
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter your age: ");
+        int a = input.nextInt();
+        System.out.print("Enter your height(cm): ");
+        double h = input.nextDouble();
+        this.age = a;
+        this.height = h;
+    }
+    public void printRes(){
+        System.out.println("Age: " + this.age + " years old");
+        System.out.printf("Height: %.2f", this.height);
+        System.out.println("cm");
+        System.out.printf("Recommend weight: %.2f", this.recommendWeight());
+        System.out.println("kg");
+    }
+}    

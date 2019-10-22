@@ -1,0 +1,49 @@
+package Week01;
+
+import java.util.Scanner;
+
+public class Fraction {
+
+    public int numerator;
+    public int denominator;
+
+    public Fraction() {
+    }
+
+    public void inputFrac() {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter the numerator: ");
+        int num = input.nextInt();
+        System.out.print("Enter the denominator: ");
+        int den = input.nextInt();
+        this.numerator = num;
+        this.denominator = den;
+    }
+
+    public void simplestFrac() {
+        int x = this.numerator;
+        int y = this.denominator;
+        while (x != y) {
+            if (x > y) {
+                x -= y;
+            } else {
+                y -= x;
+            }
+        }
+        System.out.println("Lowest form: " + this.numerator/x + "/" + this.denominator/x);
+
+    }           
+
+    public int getNumerator() {
+        return this.numerator;
+    }
+
+    public int getDenominator() {
+        return this.denominator;
+    }
+
+    public void setFrac(int a, int b) {
+        this.numerator = a;
+        this.denominator = b;
+    }
+}

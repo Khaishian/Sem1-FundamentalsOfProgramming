@@ -1,0 +1,103 @@
+package Week01;
+
+public class money {
+
+    public double amount;
+
+    public money(double amo) {
+        this.amount = amo;
+    }
+
+    public static void cal(double input) {
+        int RM100 = 0;
+        int RM50 = 0;
+        int RM10 = 0;
+        int RM5 = 0;
+        int RM1 = 0;
+        int sen50 = 0;
+        int sen20 = 0;
+        int sen10 = 0;
+        int sen5 = 0;
+        double v = input;
+        while (v >= 100) {
+            v -= 100;
+            RM100++;
+        }
+        while (v >= 50) {
+            v -= 50;
+            RM50++;
+        }
+        while (v >= 10) {
+            v -= 10;
+            RM10++;
+        }
+        while (v >= 5) {
+            v -= 5;
+            RM5++;
+        }
+        while (v >= 1) {
+            v -= 1;
+            RM1++;
+        }
+        v = Math.ceil(v * 100);
+        while (v >= 50) {
+            v -= 50;
+            sen50++;
+        }
+        while (v >= 20) {
+            v -= 20;
+            sen20++;
+        }
+        while (v >= 10) {
+            v -= 10;
+            sen10++;
+        }
+        while (v >= 5) {
+            v -= 5;
+            sen5++;
+        }
+        System.out.println("RM100: " + RM100);
+        System.out.println("RM50: " + RM50);
+        System.out.println("RM10: " + RM10);
+        System.out.println("RM5: " + RM5);
+        System.out.println("RM1: " + RM1);
+        System.out.println("50cent: " + sen50);
+        System.out.println("20cent: " + sen20);
+        System.out.println("10cent: " + sen10);
+        System.out.println("5cent: " + sen5);
+
+    }
+
+    public static double roundUp(double g) {
+        double RUcents = (g - Math.floor(g));
+        RUcents *= 100;
+        int b = (int) RUcents / 10;
+        int a = (int) RUcents % 10;
+        if (a == 1 || a == 2) {
+            a = 0;
+        } else if (a == 3 || a == 4 || a == 6 || a == 7) {
+            a = 5;
+        } else if (a == 8 || a == 9) {
+            a = 10;
+        }
+        int res = a + 10 * b;
+        double finalRes = (double) res / 100;
+        finalRes += Math.floor(g);
+        return finalRes;
+    }
+
+    public static double sum(double a, double b) {
+        double res = a + b;
+        return res;
+    }
+
+    public static double sub(double a, double b) {
+        double res;
+        if (a >= b) {
+            res = a - b;
+        } else {
+            res = b - a;
+        }
+        return res;
+    }
+}

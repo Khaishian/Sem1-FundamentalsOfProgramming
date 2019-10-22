@@ -1,0 +1,22 @@
+package Week01;
+public class Burger {
+    public String ID;
+    public int burgSold;
+    public static int totalSum = 0;
+    public Burger(String id, int bs){
+        this.ID = id;
+        this.burgSold = bs;
+        totalSum += this.burgSold;    
+    }
+    public void sold(int burg){
+        this.burgSold += burg;
+        totalSum += burg;    
+           
+    }
+    public void totalBurg(){
+        System.out.println("Total burger sold in stall " + this.ID + ": " + this.burgSold);
+    }
+    public static void totalBurgAll(){
+        System.out.println("Total burger sold in all stalls: " + totalSum);
+    }
+}
