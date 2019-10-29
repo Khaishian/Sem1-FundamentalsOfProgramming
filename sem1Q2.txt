@@ -1,0 +1,49 @@
+package Week01;
+
+import java.util.Scanner;
+
+public class PastYearSem1Q2 {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        double sales,totalSales = 0;
+        String durianType = "";
+        do{
+            System.out.print("Enter the type of durian [Quit] to terminate: ");
+            durianType = input.next();
+            if(durianType.equalsIgnoreCase("Quit")){
+                break;
+            }else if(durianType.equals("MK")||durianType.equals("HL")||durianType.equals("D24")||durianType.equals("UM")){
+            }else{
+                System.out.println("Error, please retry.");
+                continue;
+            }
+            System.out.print("Enter the sales in kg: ");
+            
+            switch (durianType){
+                case "MK":
+                    sales = input.nextDouble();
+                    totalSales += sales*25;
+                    break;
+                case "HL":
+                    sales = input.nextDouble();
+                    totalSales += sales*22;
+                    break;
+                case "D24":
+                    sales = input.nextDouble();
+                    totalSales += sales*20;
+                    break;
+                case "UM":
+                    sales = input.nextDouble();
+                    totalSales += sales*18;
+                    break;
+            }
+            
+        }while (!durianType.equalsIgnoreCase("Quit"));
+        System.out.printf("Total Sales: %.2f", totalSales);
+        
+    
+
+    }
+
+}
