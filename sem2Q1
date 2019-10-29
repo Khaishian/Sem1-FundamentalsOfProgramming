@@ -1,0 +1,38 @@
+package Week01;
+
+import java.util.Scanner;
+
+public class PastYearSem2Q1 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int checkSum;
+        int sum = 0;
+        System.out.print("Enter nine digit integer : ");
+        String nineD = input.next();
+        int [] digit = new int [9];
+        for(int c = 0; c<nineD.length(); c++){
+            String letter = nineD.substring(c, c+1);
+            digit [c] = Integer.parseInt(letter);
+            sum += digit[c]*(c+1);
+        }
+        checkSum = sum%11;
+        System.out.println(digit[0]);
+        System.out.print("10-digit ISBN : ");
+        for(int c = 0; c<nineD.length(); c++){
+            System.out.print(digit[c]);
+            if (c == 0||c == 3||c == 8){
+                System.out.print("-");
+            }
+            if(c==8){
+                if(checkSum == 10){
+                    System.out.print("X");
+                }else{
+                System.out.println(checkSum);
+                }
+            }
+        }
+        
+        
+    }
+    
+}
