@@ -1,0 +1,43 @@
+package Week01;
+
+import java.io.*;
+import java.util.*;
+
+public class tipsQues {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        Random a = new Random();
+        System.out.print("Enter the number of player [2-4]: ");
+        int playNum = input.nextInt();
+        int[] player = new int[playNum];
+        int[] pSum = new int[playNum];
+        boolean[] isWinner = new boolean [playNum];
+        boolean done = false;
+        while(true) {
+            for (int i = 0; i < playNum; i++) {
+                player[i] = a.nextInt(21) - 10;
+                int b = i + 1;
+                pSum[i] += player[i];
+                System.out.println("Player " + b + ": " + player[i] + "(" + pSum[i] + ")");
+                if (pSum[i] >= 50) {
+                    isWinner[i] = true;
+
+                }
+
+            }
+            System.out.println("");
+            for (int i = 0; i < playNum; i++) {
+                if (isWinner[i]) {
+                    int b = i + 1;
+                    done = true;
+                    System.out.println("Player " + b + " wins!!");
+                }
+            }
+            if (done){
+                break;
+            }
+        }
+
+    }
+}
